@@ -4,12 +4,12 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
-file = pickle.load(open("C:\\Users\\Rotimi\\Downloads\\ln_regproject.pkl", 'rb'))
+file = pickle.load(open("ln_regproject.pkl", 'rb'))
 
 st.title('Welcome to Spent Calories Predictor')
 st.text("This app allows users who have just completed exercise sessions estimate how \nmuch calories they used up during the exercise session.")
 st.sidebar.header('User\'s Data')
-user_image = Image.open("C:\\Users\\Rotimi\\Downloads\\calories_img.jpg")
+user_image = Image.open("calories_img.jpg")
 st.image(user_image, width=500)
 # creating a function for the values
 
